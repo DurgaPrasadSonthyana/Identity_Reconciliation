@@ -108,10 +108,12 @@
 
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
-    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
+    "skipLibCheck": true      ,                           /* Skip type checking all .d.ts files. */
+    "rootDir": "src",        // ← tell tsc your sources live in src/
+    "outDir": "dist",        // ← and compiled files go here
+
 
   },
-   "include": [
-    "src/**/*.ts"
-  ]
+   "include": ["src/**/*"]
+
 }

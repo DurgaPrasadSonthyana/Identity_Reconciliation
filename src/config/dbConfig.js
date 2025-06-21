@@ -1,9 +1,9 @@
 import { Sequelize } from 'sequelize';
 
 export const sequelize = new Sequelize(
-  process.env.PGDATABASE!,
-  process.env.PGUSER!,
-  process.env.PGPASSWORD!,
+  process.env.PGDATABASE,
+  process.env.PGUSER,
+  process.env.PGPASSWORD,
   {
     host: process.env.PGHOST,
     port: Number(process.env.PGPORT) || 5432,
@@ -11,4 +11,3 @@ export const sequelize = new Sequelize(
     logging: false,
   }
 );
-
